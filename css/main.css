@@ -366,6 +366,9 @@ font-weight: 400; }
           margin: 0 auto; 
           /* border: 1px solid white; */
           padding-inline-start: 0px !important;
+          -webkit-padding-inline-start : 0px !important;
+          -moz-padding-inline-start : 0px !important;
+          
         }
           .card__details ul li {
             text-align: center;
