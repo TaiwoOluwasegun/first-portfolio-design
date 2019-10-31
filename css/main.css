@@ -364,10 +364,11 @@ font-weight: 400; }
           list-style: none;
           width: 90%;
           margin: 0 auto; 
+          margin-left: 0px;
           /* border: 1px solid white; */
-          padding-inline-start: 0px !important;
+          /* padding-inline-start: 0px !important;
           -webkit-padding-inline-start : 0px !important;
-          -moz-padding-inline-start : 0px !important;
+          -moz-padding-inline-start : 0px !important; */
           
         }
           .card__details ul li {
