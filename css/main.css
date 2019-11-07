@@ -245,7 +245,7 @@ path{
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 30vh; }
 
 .about-info {
   display: grid;
@@ -840,17 +840,20 @@ h6 {
 
  .bio-image {
   width: 170px;}
+
+  
+  main#home h1 {
+    margin-top: 30vh; }
   
   }
 
  
-  /* border-radius: 50%; */
 
     
     
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 20vh; }
+    margin-top: 30vh; }
   .projects {
     grid-template-columns: 1fr 1fr; } 
   
