@@ -111,7 +111,12 @@ background-position: center }
 
 body {
   /* background: #1a1929; */
-  background-image: linear-gradient(to bottom, #060d1cbf, #021a26c6), url(../img/bg2.png) ;
+  background-image: linear-gradient(to right bottom, #060d1cce, #021a26c6), url(../img/bg2.png) ;
+  -moz-background-image: linear-gradient(to right bottom, #060d1cbf, #021a26c6), url(../img/bg2.png) ;
+
+  -webkit-background-image: linear-gradient(to right bottom, #060d1cbf, #021a26c6), url(../img/bg2.png) ;
+
+
   object-fit: cover;
   
   
