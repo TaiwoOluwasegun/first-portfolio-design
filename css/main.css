@@ -111,7 +111,8 @@ background-position: center }
 
 body {
   /* background: #1a1929; */
-  background-image: linear-gradient(to right bottom, #060d1cce, #021a26c6), url(../img/bg2.png) ;
+  background-image: linear-gradient(to right bottom, #060d1c, #021a26), url(../img/bg2.png) ;
+  background-blend-mode: overlay;
   -moz-background-image: linear-gradient(to right bottom, #060d1cbf, #021a26c6), url(../img/bg2.png) ;
 
   -webkit-background-image: linear-gradient(to right bottom, #060d1cbf, #021a26c6), url(../img/bg2.png) ;
@@ -321,7 +322,7 @@ font-weight: 400; }
     background-blend-mode: soft-light;
    }
     .card__picture-1 {
-      background-image: linear-gradient(to right bottom, #282896f8, #012233fd), url(../img/fe.png) }
+      background-image: linear-gradient(to right bottom, #282896, #012233), url(../img/fe.png) }
 
       .card__picture-2 {
         background-image: linear-gradient(to right bottom,#614246, #bf8272 ), url(../img/ui-design.jpg); }
