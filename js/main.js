@@ -15,6 +15,16 @@ document.addEventListener('click', () => {
 })
 
 
+const CUR = document.querySelector('.CUR');
+
+document.addEventListener('click', () => {
+    CUR.classList.add('expandTEST');
+    setTimeout(()=>{
+        cursor.classList.remove('expandTEST')
+    },500)
+})
+
+
 //select dom items
 const menubtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');

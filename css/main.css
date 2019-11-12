@@ -111,11 +111,11 @@ background-position: center }
 
 body {
   /* background: #1a1929; */
-  background-image: linear-gradient(to right bottom, #060d1c, #021a26), url(../img/bg2.png) ;
+  background-image: linear-gradient(to right bottom, rgba(6, 13, 28, 0.859), rgba(2, 26, 38, 0.78)), url(../img/bg2.png) ;
   background-blend-mode: overlay;
-  -moz-background-image: linear-gradient(to right bottom, #060d1cbf, #021a26c6), url(../img/bg2.png) ;
+  -moz-background-image: linear-gradient(to right bottom,rgba(6, 13, 28, 0.859), rgba(2, 26, 38, 0.78)), url(../img/bg2.png) ;
 
-  -webkit-background-image: linear-gradient(to right bottom, #060d1cbf, #021a26c6), url(../img/bg2.png) ;
+  -webkit-background-image: linear-gradient(to right bottom, rgba(6, 13, 28, 0.859), rgba(2, 26, 38, 0.78)), url(../img/bg2.png) ;
 
 
   object-fit: cover;
@@ -168,7 +168,7 @@ h3,h4 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: #7f7e8d5f; }
+    background: rgba(127, 126, 141, 0.373); }
 
   h2.sm-heading{
     font-size: 1.3rem;
@@ -345,7 +345,7 @@ font-weight: 400; }
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone; }
         .card__heading-span-1 {
-      background-image: linear-gradient(to right bottom, rgba(47, 21, 77, 0.892), #5ca3d7); }
+      background-image: linear-gradient(to right bottom, rgba(47, 21, 77, 0.892), rgb(92, 163, 215)); }
 
       .card__heading-span-3{
         background-image: linear-gradient(to right bottom,rgba(44, 17, 7, 0.83), rgba(81, 43, 12, 0.844) ); }
@@ -396,6 +396,63 @@ font-weight: 400; }
             .card__details ul li:not(:last-child) {
               border-bottom: 1px solid #eee; }
 
+
+               /* cursor anim testing */
+
+               #second{
+                /* width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid white;
+                position: absolute; */
+                /* transition-duration: 200ms; */
+                /* animation: cursoranim .4s infinite alternate; */
+                /* z-index: -1000; */
+                position: relative;
+              }
+              
+              #second::after{
+                content: '';
+                height: 11px;
+                width: 11px;
+                position: absolute;
+                border: 5px solid rgb(218, 218, 218);
+                border-radius: 50%;
+                opacity: .5;
+                top: 0.81rem;
+                left: 0.15rem;
+                /* top: -.5rem; */
+                /* left: -.5rem; */
+                animation: cursoranimTEST .6s infinite alternate;
+                transition-timing-function: ease-out;
+                
+                display: none;
+                
+              }
+             
+              /* O anim animations */
+
+              @keyframes cursoranim{
+                from{
+                  transform: scale(1)
+                }
+                to{
+                  transform: scale(.7)
+                }
+              }
+              @keyframes cursoranimTEST{
+                from{
+                  transform: scale(1.9);
+                  opacity: 1;
+                  
+                }
+                to{
+                  transform: scale(.7);
+                  opacity: .2;                  
+                }
+              }
+             
+              
               /* cursor testing */
 
               .cursor{
@@ -859,6 +916,13 @@ h6 {
       object-fit: cover;
     
     }
+
+    #second::after{
+     
+      display: block;
+      
+    }
+   
   
   }
 
